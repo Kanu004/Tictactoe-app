@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import  { useState } from 'react';
 import Board from './components/board';
 import History from './components/history';
 import StatusMessage from './components/statusmsg';

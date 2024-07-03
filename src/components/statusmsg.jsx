@@ -1,4 +1,3 @@
-import React from 'react';
 
 const Statusmsg = ({ winner, current }) => {
   const noMovesLeft = current.board.every(el => el !== null);
