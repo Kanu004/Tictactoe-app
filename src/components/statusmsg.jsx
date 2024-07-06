@@ -6,7 +6,7 @@ const Statusmsg = ({ winner, current }) => {
     <div className="status-message">
       {winner && (
         <>
-          Winner is{' '}
+          Winner is: {' '}
           <span className={winner === 'X' ? 'text-green' : 'text-orange'}>
             {winner}
           </span>
@@ -14,7 +14,7 @@ const Statusmsg = ({ winner, current }) => {
       )}
       {!winner && !noMovesLeft && (
         <>
-          Next player is{' '}
+         Move of: {' '}
           <span className={current.isXNext ? 'text-green' : 'text-orange'}>
             {current.isXNext ? 'X' : 'O'}{' '}
           </span>
