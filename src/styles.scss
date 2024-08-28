@@ -2,6 +2,9 @@ $green: #12e177;
 $orange: #ffc72a;
 $blue: #4c43d4;
 
+.class{
+  text-align: center;
+}
 body {
   font-family: 'Roboto', sans-serif;
   background-color: $blue;
@@ -14,6 +17,20 @@ button {
   background: none;
   border: none;
   outline: none;
+  &:hover {
+    cursor: pointer;
+  }
+}
+
+.buttons {
+  margin-top: 8vw;
+  margin-left: 12vw;
+  margin-right: 10vw;
+  border: solid black ;
+  border-radius: 5px;
+  height: 25vw;
+  width: 25vw;
+  background: none;
   &:hover {
     cursor: pointer;
   }
