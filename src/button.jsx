@@ -3,15 +3,15 @@ import './styles.scss';
 
 const Button=()=>{
  return(
-    <div>
-    
-    <Link to='/'>
-    <button className="btn-reset1"></button>
-    </Link>
-    <Link to="./twoplayer.jsx" target='_self'>
-    <button className="btn-reset2" ></button>
-    </Link>
+    <div className="app1">
+      <Link to="./Computer.jsx" >
+      <button >Human vs Computer</button>
+      </Link>
+      <Link to="./twoplayer.jsx" replace>
+      <button>Two players</button>
+      </Link>
     </div>
  );
 }
 export default Button;
+

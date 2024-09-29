@@ -2,6 +2,24 @@ $green: #12e177;
 $orange: #ffc72a;
 $blue: #4c43d4;
 
+.app1 {
+  text-align: center;
+}
+
+button {
+  margin-top: 10%;
+  font-size: 24px;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  color: rgb(128, 0, 0);
+  cursor: pointer;
+}
+
+button:hover {
+ background-color: yellow;
+}
+
 .class{
   text-align: center;
 }
@@ -37,7 +55,7 @@ button {
 }
 
 .app {
-  font-size: 20px;
+  font-size: 17px;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -109,26 +127,17 @@ button {
 }
 
 .btn-reset1 {
-  margin-left: 10vw;
-  margin-right: 10px;
-  margin-top: 50px;
-  background-image: url('./Com\ 512.png');
-  box-sizing: border-box;
-  padding: 22vw 20vw 13vw 15vw;
-  border: solid black 2px;
-  border-radius: 3vw;
+  display: flex;
+  flex-direction: column;
+  direction: rtl;
   
 }
 
-.btn-reset2 {
-  margin-left: 6px;
-  margin-right: 3%;
-  margin-top: 50px;  
-  background-image: url('./Two\ 512.png');
+.btn-reset2 { 
   box-sizing: border-box;
-  padding: 22vw 24vw 13vw 15vw;
   border: solid black 2px;
-  border-radius: 2vw;
+  border-radius: 5vw;
+  align-self: center;
 }
 .board{
   .board-row{
@@ -168,18 +177,16 @@ button {
 }
 
 .bg-balls {
-  position: fixed;
-  top: 0;
+  position: absolute;
+  top: 10%;
   left: 0;
   right: 0;
-  bottom: 0;
-  min-width: 100%;
-  z-index: -1;
+  bottom: 10%;
 
   &:before,
   &:after {
     content: '';
-    position: absolute;
+    position: fixed;
     width: 150px;
     height: 150px;
     border-radius: 50%;

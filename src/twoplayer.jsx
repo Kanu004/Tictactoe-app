@@ -45,6 +45,7 @@ const Twoplayer =()=>{
     setCurrentMove(0);
   };
 
+
   return (
     <div className="app">
       <h1>
@@ -68,6 +69,7 @@ const Twoplayer =()=>{
       <div className="bg-balls" />
     </div>
   );
+
 
 }
 export default Twoplayer;

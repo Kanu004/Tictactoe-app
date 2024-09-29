@@ -1,20 +1,26 @@
-import {  Route, Routes,HashRouter, Outlet } from 'react-router-dom';
+import {  Route, Routes,BrowserRouter} from 'react-router-dom';
 import Twoplayer from './twoplayer';
 import  './styles.scss';
+import img from './th.jpg';
 import Button from './button';
+import { Computer } from '@mui/icons-material';
 
 const App = () => {
   return (
-  <div>
-    <HashRouter>
+    <div className='bg-balls'>
+    <div className='app'>
       <h1 className='class'>
         TIC <span className="text-green">TAC</span> TOE
-      </h1>  
-      <Button/>
+      </h1> 
+    <img src={img} className='btn-reset2'/>
+    <BrowserRouter>
       <Routes>
-        <Route path='/twoplayer.jsx' element={<Twoplayer />} />
+      <Route path='/computer.jsx' element={<Computer />} />
+      <Route path='/twoplayer.jsx' element={<Twoplayer />} />
       </Routes>
-      </HashRouter>
+      <Button/>
+      </BrowserRouter>
+      </div>
       </div>
   );
   
