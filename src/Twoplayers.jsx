@@ -1,14 +1,14 @@
 import  { useState } from 'react';
-import Board from './components/board';
-import History from './components/history';
-import StatusMessage from './components/statusmsg';
-import { calculateWinner } from './helper';
+import Board from './components/Board';
+import History from './components/History';
+import StatusMessage from './components/Statusmsg';
+import { calculateWinner } from './Helper';
 import  './styles.scss';
 
 const NEW_GAME = [{ board: Array(9).fill(null), isXNext: true }];
 
-const Twoplayer =()=>{
-    const [history, setHistory] = useState(NEW_GAME);
+const Twoplayers = () => {
+  const [history, setHistory] = useState(NEW_GAME);
   const [currentMove, setCurrentMove] = useState(0);
   const current = history[currentMove];
 
@@ -45,7 +45,6 @@ const Twoplayer =()=>{
     setCurrentMove(0);
   };
 
-
   return (
     <div className="app">
       <h1>
@@ -69,7 +68,6 @@ const Twoplayer =()=>{
       <div className="bg-balls" />
     </div>
   );
+};
 
-
-}
-export default Twoplayer;
+export default Twoplayers;

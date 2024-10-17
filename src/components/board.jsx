@@ -1,4 +1,4 @@
-import Square from './square';
+import Square from './Square';
 
 const Board = ({ board, handleSquareClick, winningSquares }) => {
   const renderSquare = position => {
