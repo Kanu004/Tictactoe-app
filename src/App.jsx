@@ -5,6 +5,7 @@ import Twoplayers from './Twoplayers';
 import img from './th.jpg';
 import './styles.scss';
 
+
 const HomePage = () => {
   return (
     <div className='bg-balls'>
